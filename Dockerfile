@@ -3,14 +3,14 @@ USER root
 # Pipeline
 RUN  jenkins-plugin-cli \
      --plugins \
-     workflow-aggregator && \
-     install-plugin github && \
-     install-plugin ws-cleanup && \
-     greenballs && \
-     simple-theme-plugin && \
-     kubernetes && \
-     docker-workflow && \
-     kubernetes-cli && \
+     workflow-aggregator \
+     install-plugin github \
+     install-plugin ws-cleanup \
+     greenballs \
+     simple-theme-plugin \
+     kubernetes \
+     docker-workflow \
+     kubernetes-cli \
      github-branch-source
 
 # install Maven, Java, Docker, AWS
